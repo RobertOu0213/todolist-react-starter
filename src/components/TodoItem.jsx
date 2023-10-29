@@ -114,6 +114,7 @@ const TodoItem = ({ todo, onSave, onDelete, onToggleDone, onChangeMode }) => {
       onChangeMode?.({ id: todo.id, isEdit: false });
     }
   };
+  
   return (
     <StyledTaskItem
       className={clsx('', { done: todo.isDone, edit: todo.isEdit })}
