@@ -2,22 +2,22 @@
   "todos": [
     {
       "title": "Learn to create custom hookssssssss",
-      "isDone": false,
+      "isDone": true,
       "id": 2
     },
     {
       "title": "Learn to use context",
-      "isDone": false,
+      "isDone": true,
       "id": 3
     },
     {
       "title": "Learn to implement authsssssss",
-      "isDone": false,
+      "isDone": true,
       "id": 4
     },
     {
       "title": "test01",
-      "isDone": false,
+      "isDone": true,
       "id": 5
     }
   ]
