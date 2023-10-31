@@ -114,7 +114,7 @@ const TodoItem = ({ todo, onSave, onDelete, onToggleDone, onChangeMode }) => {
       onChangeMode?.({ id: todo.id, isEdit: false });
     }
   };
-  
+
   return (
     <StyledTaskItem
       className={clsx('', { done: todo.isDone, edit: todo.isEdit })}
@@ -140,7 +140,10 @@ const TodoItem = ({ todo, onSave, onDelete, onToggleDone, onChangeMode }) => {
         />
       </div>
       <div className="task-item-action ">
-        <button className="btn-reset btn-destroy icon"></button>
+        <button
+          className="btn-reset btn-destroy icon"
+          onClick={() => onDelete?.(todo.id)}
+        ></button>
       </div>
     </StyledTaskItem>
   );
