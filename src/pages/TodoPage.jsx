@@ -8,6 +8,7 @@ import { useAuth } from '../contexts/AuthContext';
 const TodoPage = () => {
   const [inputValue, setInputValue] = useState('');
   const [todos, setTodos] = useState([]);
+  const todoNums = todos.length;
   const navigate = useNavigate();
   const { isAuthenticated, currentMember } = useAuth();
 
@@ -172,7 +173,7 @@ const TodoPage = () => {
         onSave={handleSave}
         onDelete={handleDelete}
       />
-      <Footer />
+      <Footer numOfTodos={todoNums} />
     </div>
   );
 };
